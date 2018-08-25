@@ -7,10 +7,10 @@
 
 echo
 echo
-DGBbalance=`digibyted getbalance`
-DGBBalance=$(echo "$DGBbalance - 1.0" | bc -l)
-echo "Digibyte BALANCE: $DGBbalance"
-DGBaddress="YOUR EXCHANGE DIGIBYTE ADDRESS"
-digibyted sendtoaddress $DGBaddress $DGBBalance
+RVNbalance=`raven-cli getbalance`
+RVNBalance=$(echo "$RVNbalance - 1.0" | bc -l)
+echo "Ravencoin BALANCE: $RVNbalance"
+RVNaddress="YOUR EXCHANGE ravencoin ADDRESS"
+raven-cli sendtoaddress $RVNaddress $RVNBalance
 echo
 echo
